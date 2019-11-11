@@ -1,34 +1,49 @@
+body {
+    background-color: #ececeb;
+}
+
 .homescreen-main {
     display: grid;
-    grid-template-columns: 30em 1fr;
+    grid-template-columns: 21em 1fr;
     grid-template-rows: 23em 1fr;
+    grid-gap: 1em;
+}
+
+.homescreen-cabecera {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    grid-column: 1/3;
+    grid-row:1/2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .homescreen-banner-title {
-    grid-column: 1 / 3;
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    grid-row: 1 / 2;
+    grid-row:1/2;
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns: 1em 1fr;
 }
 
 h1 {
     color:white;
-    text-align: left;
     font-size: 5em;
-    width:100%;
-    padding-left:1em;
+    text-align:left;
+    grid-column: 2/3;
 }
 
 h2 {
     color:white;
+    text-align:left;
     font-size:2em;
-    padding-left:1.8em;
     width:12em;
+    grid-column: 2/3;
 }
 
 .homescreen-decoration {
-    grid-column: 2 / 3;
     text-align: right;
-    grid-row: 1 /2;
+    grid-row:1/2;
+    grid-column:2/3;
 }
 
 .homescreen-decoration img {
@@ -38,14 +53,48 @@ h2 {
 }
 
 .homescreen-toplist {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    
+    grid-column: 1/2;
+    grid-row:2/3;
+    padding-left:1em;
 }
 
 .homescreen-toplist-tarjeta {
-    position: absolute;
-    width: 300px;
-    background-color:lightgray;
-    height:350px;
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    height:inherit;
+    border-radius: 8px;
+}
+
+.homescreen-toplist-tarjeta p {
+    text-align:left;
+    padding: 0.3em;
+    margin: 0;
+}
+
+.homescreen-toplist-tarjeta p:last-child{
+    border-radius: 0 0 8px 8px;
+}
+
+.homescreen-toplist-tarjeta p:nth-child(2n){
+    background: rgba(0,0,0,.1);
+}
+
+.homescreen-toplist-title {
+    border-radius: 8px 8px 0 0 ;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: white;
+}
+
+.homescreen-searchbar {
+    grid-column:2/3;
+}
+
+.homescreen-searchbar input {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    height:2.5em;
+    outline: none;
 }
