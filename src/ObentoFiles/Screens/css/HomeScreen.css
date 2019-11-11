@@ -1,0 +1,51 @@
+.homescreen-main {
+    display: grid;
+    grid-template-columns: 30em 1fr;
+    grid-template-rows: 23em 1fr;
+}
+
+.homescreen-banner-title {
+    grid-column: 1 / 3;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    grid-row: 1 / 2;
+}
+
+h1 {
+    color:white;
+    text-align: left;
+    font-size: 5em;
+    width:100%;
+    padding-left:1em;
+}
+
+h2 {
+    color:white;
+    font-size:2em;
+    padding-left:1.8em;
+    width:12em;
+}
+
+.homescreen-decoration {
+    grid-column: 2 / 3;
+    text-align: right;
+    grid-row: 1 /2;
+}
+
+.homescreen-decoration img {
+    width:400px;
+    padding-right: 5em;
+    padding-top:1em;
+}
+
+.homescreen-toplist {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+}
+
+.homescreen-toplist-tarjeta {
+    position: absolute;
+    width: 300px;
+    background-color:lightgray;
+    height:350px;
+}
