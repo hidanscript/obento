@@ -6,6 +6,7 @@ import Ichigo from './../Images/ichigo.png';
 import MangaCard from '../Components/Manga/MangaCard';
 import Cover from './../Images/Covers/jojo.jpg';
 import CoverMHA from './../Images/Covers/mha.jpg';
+import CoverOP from './../Images/Covers/op.jpg';
 
 export default class HomeScreen extends Component {
 
@@ -15,17 +16,16 @@ export default class HomeScreen extends Component {
                 <div className="homescreen-cabecera">
                     <div className="homescreen-banner-title">
                         <h1>Obento</h1>
-                        <h2>Online <b>manga</b> library!</h2>
+                        
                         <div className="homescreen-searchbar">
                             <input type="text" placeholder="manga title..."/>
                         </div>
                     </div>
-
+                    {/*}
                     <div className="homescreen-decoration">
                         <img src={Ichigo} alt="ichigo"></img>
                     </div>
-
-                    
+                    */}
 
                 </div>
                 
@@ -50,6 +50,19 @@ export default class HomeScreen extends Component {
                 <div className="homescreen-manga">
                     <MangaCard cover={Cover} title="Jojo's Bizarre Adventure"/>
                     <MangaCard cover={CoverMHA} title="My Hero Academia"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
+                    <MangaCard cover={CoverOP} title="One Piece"/>
                 </div>
             </div>
         );
