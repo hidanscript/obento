@@ -5,7 +5,7 @@ body {
 .homescreen-main {
     display: grid;
     grid-template-columns: 21em 1fr;
-    grid-template-rows: 23em 1fr;
+    grid-template-rows: 25em 1fr;
     grid-gap: 1em;
 }
 
@@ -94,7 +94,54 @@ h2 {
 .homescreen-searchbar input {
     width: 100%;
     border: none;
+    padding-left:15px;
     border-radius: 16px;
     height:2.5em;
     outline: none;
+}
+
+.homescreen-manga {
+    display: flex;
+    padding: 2em;
+}
+
+@media (max-width: 500px) {
+    .homescreen-cabecera {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .homescreen-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homescreen-decoration img {
+        width: 200px;
+    }
+
+    .homescreen-decoration {
+        text-align: center;
+    }
+
+    .homescreen-searchbar input {
+        width:90%;
+    }
+
+    .homescreen-searchbar {
+        grid-column:1/3;
+    }
+
+    .homescreen-toplist {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .homescreen-manga {
+        flex-direction: column;
+    }
+
+    .homescreen-toplist-tarjeta {
+        justify-content: center;
+    }
 }
